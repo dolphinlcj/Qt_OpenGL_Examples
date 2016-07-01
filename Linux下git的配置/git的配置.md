@@ -7,12 +7,13 @@
 - sudo apt-get install git
 
 ##Git上传文件到github的配置
-###安装ssh协议
 
 ###Git的安装
+
 - sudo apt-get install git
 
 ###Git上传文件到github的配置
+
 ####安装ssh协议
 1、安装ssh，git是基于ssh协议的：
 - sudo apt-get install openssh-server openssh-client
@@ -21,9 +22,11 @@
 - sudo /etc/init.d/ssh restart
 
 ####申请github账号
+
 本人在windows上已经申请过，也在windows下上传过代码到github仓库中，故此步骤省略。
 
 ####配置ssh Public Key（公钥）
+
 1、在本地生成ssh 公钥
 - ssh -keygen -C 'email' -t rsa
 会在用户目录下/home/用户名/.ssh/下建立秘钥文件，这个.ssh是隐藏文件
@@ -38,6 +41,7 @@
 - ssh -v git@github.com
 
 ####上传文件
+
 1、进入所要上传文件的目录：
 - git init
 
